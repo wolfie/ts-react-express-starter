@@ -1,20 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import { getHelloWorld } from "./api";
-
-const App = () => {
-  const [serverMessage, setServerMessage] = useState<string>(
-    "Calling backend..."
-  );
-
-  getHelloWorld().then(json => setServerMessage(json.message));
-
-  return (
-    <>
-      <h1>Hello From React!</h1>
-      <p>{serverMessage}</p>
-    </>
-  );
-};
+import App from "./App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
