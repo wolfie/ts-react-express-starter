@@ -24,8 +24,11 @@ if (isProd) {
 }
 
 app.get(`${PATH_PREFIX}/`, (req, res) => {
-  const message: HelloWorldMessage = { message: "Hello from Express!" };
-  res.json(message);
+  // Reply with a generic message with a synthetic loading time
+  setTimeout(() => {
+    const message: HelloWorldMessage = { message: "Hello from Express!" };
+    res.json(message);
+  }, 1000);
 });
 
 app.listen(PORT, () => {
