@@ -1,0 +1,18 @@
+{
+  "name": "@ts-react-express-starter/server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run nodemon"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

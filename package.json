@@ -1,0 +1,19 @@
+{
+  "name": "ts-react-express-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "server"
+  ],
+  "scripts": {
+    "start": "yarn concurrently yarn:start:dev:*",
+    "start:dev:frontend": "yarn workspace @ts-react-express-starter/frontend start",
+    "start:dev:server": "yarn workspace @ts-react-express-starter/server start"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
