@@ -1,0 +1,12 @@
+{
+  "name": "@ts-react-express-starter/common",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:prod": "yarn run tsc -p tsconfig.prod.json"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.1"
+  }
+}

@@ -1,8 +1,9 @@
 import * as path from "path";
 import * as express from "express";
 import * as cors from "cors";
+import { isProd } from "@ts-react-express-starter/common/util";
+import { HelloWorldMessage } from "@ts-react-express-starter/common/interfaces";
 
-const isProd = process.env.NODE_ENV === "production";
 console.log(`[Express: ${isProd ? "PRODUCTION" : "DEVELOPMENT"} MODE]`);
 
 const app = express();
@@ -23,7 +24,8 @@ if (isProd) {
 }
 
 app.get(`${PATH_PREFIX}/`, (req, res) => {
-  res.json({ message: "Hello from Express!" });
+  const message: HelloWorldMessage = { message: "Hello from Express!" };
+  res.json(message);
 });
 
 app.listen(PORT, () => {

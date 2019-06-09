@@ -6,7 +6,8 @@
   "private": true,
   "workspaces": [
     "frontend",
-    "server"
+    "server",
+    "common"
   ],
   "scripts": {
     "start": "yarn start:dev",
@@ -16,6 +17,7 @@
     "build": "yarn concurrently yarn:build:*",
     "build:frontend": "yarn workspace @ts-react-express-starter/frontend build:prod",
     "build:server": "yarn workspace @ts-react-express-starter/server build:prod",
+    "build:common": "yarn workspace @ts-react-express-starter/common build:prod",
     "start:build": "yarn run cross-env NODE_ENV=\"production\" node dist"
   },
   "devDependencies": {
