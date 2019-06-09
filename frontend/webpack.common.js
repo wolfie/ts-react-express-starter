@@ -1,5 +1,6 @@
-var path = require("path");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -13,6 +14,7 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html"),
       filename: "index.html",
@@ -28,14 +30,5 @@ module.exports = {
         loader: "babel-loader"
       }
     ]
-  },
-  devServer: {
-    serveIndex: false,
-    watchContentBase: true
-  },
-  mode: "development",
-  devtool: "inline-source-map",
-  devServer: {
-    contentBase: path.resolve(__dirname, "public")
   }
 };
