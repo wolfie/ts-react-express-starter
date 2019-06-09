@@ -5,9 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run webpack-dev-server --progress --config webpack.dev.js",
-    "build": "yarn build:dev",
-    "build:dev": "yarn run webpack --config webpack.dev.js",
-    "build:prod": "yarn run webpack --config webpack.prod.js"
+    "build": "yarn run webpack --config webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

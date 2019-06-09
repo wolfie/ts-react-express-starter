@@ -15,9 +15,9 @@
     "start:dev:frontend": "yarn workspace @ts-react-express-starter/frontend start",
     "start:dev:server": "yarn workspace @ts-react-express-starter/server start",
     "build": "yarn concurrently yarn:build:*",
-    "build:frontend": "yarn workspace @ts-react-express-starter/frontend build:prod",
-    "build:server": "yarn workspace @ts-react-express-starter/server build:prod",
-    "build:common": "yarn workspace @ts-react-express-starter/common build:prod",
+    "build:frontend": "yarn workspace @ts-react-express-starter/frontend build",
+    "build:server": "yarn workspace @ts-react-express-starter/server build",
+    "build:common": "yarn workspace @ts-react-express-starter/common build",
     "start:build": "yarn run cross-env NODE_ENV=\"production\" node dist"
   },
   "devDependencies": {

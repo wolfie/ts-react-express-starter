@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run nodemon",
-    "build": "yarn run tsc",
-    "build:prod": "yarn run tsc -p tsconfig.prod.json"
+    "build": "yarn run tsc -p tsconfig.prod.json"
   },
   "devDependencies": {
     "@types/cors": "^2.8.5",
