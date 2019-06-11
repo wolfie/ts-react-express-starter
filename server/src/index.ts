@@ -2,7 +2,7 @@ import * as path from "path";
 import * as express from "express";
 import * as cors from "cors";
 import { isProd } from "@ts-react-express-starter/common/util";
-import { HelloWorldMessage } from "@ts-react-express-starter/common/interfaces";
+import { getTestMessage } from "./testMessage";
 
 console.log(`[Express: ${isProd ? "PRODUCTION" : "DEVELOPMENT"} MODE]`);
 
@@ -23,12 +23,9 @@ if (isProd) {
   app.use(cors({ origin: REACT_SERVER }));
 }
 
-app.get(`${PATH_PREFIX}/`, (req, res) => {
-  // Reply with a generic message with a synthetic loading time
-  setTimeout(() => {
-    const message: HelloWorldMessage = { message: "Hello from Express!" };
-    res.json(message);
-  }, 1000);
+app.get(`${PATH_PREFIX}/`, async (req, res) => {
+  const obj = await getTestMessage();
+  res.json(obj);
 });
 
 app.listen(PORT, () => {
