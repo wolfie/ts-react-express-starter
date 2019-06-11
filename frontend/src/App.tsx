@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import * as React from "react";
 import { getHelloWorld } from "./api";
+
+const { useState, useEffect } = React;
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState<string>(
