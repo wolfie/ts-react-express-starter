@@ -23,10 +23,6 @@ Start with installing all requried dependencies, and creating all appropriate sy
 $ yarn
 ```
 
-### Testing
-
-_Testing is not implemented yet_
-
 ### Development Mode
 
 To start development mode:
@@ -36,6 +32,14 @@ $ yarn start
 ```
 
 This starts _two_ servers on localhost, on ports 8080 and 8081. Open http://localhost:8080 to serve the files from `/frontend` - React and all that. localhost:8081 is where the `/server` stuff is, i.e. Express.
+
+### Testing
+
+To run all tests in the project, you can simply run
+
+```console
+$ yarn test
+```
 
 ### Production Build
 
