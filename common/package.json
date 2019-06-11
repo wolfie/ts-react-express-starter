@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn run tsc -p tsconfig.prod.json"
+    "build": "tsc -p tsconfig.prod.json"
   },
   "devDependencies": {
     "typescript": "^3.5.1"

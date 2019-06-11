@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run nodemon",
-    "build": "yarn run tsc -p tsconfig.prod.json",
-    "test": "yarn run jest"
+    "start": "nodemon",
+    "build": "tsc -p tsconfig.prod.json",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/cors": "^2.8.5",

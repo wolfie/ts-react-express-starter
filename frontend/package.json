@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run webpack-dev-server --progress --config webpack.dev.js",
-    "build": "yarn run webpack --config webpack.prod.js"
+    "start": "webpack-dev-server --progress --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

@@ -11,15 +11,15 @@
   ],
   "scripts": {
     "start": "yarn start:dev",
-    "start:dev": "yarn concurrently yarn:start:dev:*",
+    "start:dev": "concurrently yarn:start:dev:*",
     "start:dev:frontend": "yarn workspace @ts-react-express-starter/frontend start",
     "start:dev:server": "yarn workspace @ts-react-express-starter/server start",
-    "build": "yarn concurrently yarn:build:*",
+    "build": "concurrently yarn:build:*",
     "build:frontend": "yarn workspace @ts-react-express-starter/frontend build",
     "build:server": "yarn workspace @ts-react-express-starter/server build",
     "build:common": "yarn workspace @ts-react-express-starter/common build",
-    "start:build": "yarn run cross-env NODE_ENV=\"production\" node dist",
-    "test": "yarn concurrently yarn:test:*",
+    "start:build": "cross-env NODE_ENV=\"production\" node dist",
+    "test": "yarn test:server",
     "test:server": "yarn workspace @ts-react-express-starter/server test"
   },
   "devDependencies": {
