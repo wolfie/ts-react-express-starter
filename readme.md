@@ -56,4 +56,4 @@ All this happens automatically by the configurations.
 
 ## General Notes
 
-The one/two servers difference is only to make the setup of the project as (technically) simple as possible, while suitable for as many as possible. You should be able to any of the three, together or separately, with minimal reconfiguration required.
+The one/two servers difference is only to make the setup of the project as (technically) simple as possible, while suitable for as many as possible. You should be able to start using any of the three, together or separately, with minimal reconfiguration required.
