@@ -3,7 +3,7 @@ import { getHelloWorld } from "./api";
 
 const { useState, useEffect } = React;
 
-const App = () => {
+const App: React.FunctionComponent = () => {
   const [serverMessage, setServerMessage] = useState<string>(
     "Calling backend..."
   );
