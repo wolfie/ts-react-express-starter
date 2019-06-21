@@ -1,4 +1,4 @@
-import { HelloWorldMessage } from "@ts-react-express-starter/common/src/interfaces";
+import { HelloWorldMessage } from "@ts-react-express-starter/common";
 
 export const getTestMessage = (): Promise<HelloWorldMessage> =>
   new Promise((resolve, reject) => {

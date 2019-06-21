@@ -1,5 +1,4 @@
-import { isProd } from "@ts-react-express-starter/common/src/util";
-import { HelloWorldMessage } from "@ts-react-express-starter/common/src/interfaces";
+import { isProd, HelloWorldMessage } from "@ts-react-express-starter/common";
 
 // TODO: inject endpoints from config
 const API_BASE = isProd ? "/api" : "//localhost:8081";

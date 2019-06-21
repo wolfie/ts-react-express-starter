@@ -1,7 +1,7 @@
 import * as path from "path";
 import * as express from "express";
 import * as cors from "cors";
-import { isProd } from "@ts-react-express-starter/common/src/util";
+import { isProd } from "@ts-react-express-starter/common";
 import { getTestMessage } from "./testMessage";
 
 console.log(`[Express: ${isProd ? "PRODUCTION" : "DEVELOPMENT"} MODE]`);
