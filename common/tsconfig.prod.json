@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../dist/node_modules/@ts-react-express-starter/common/src"
+    "outDir": "../dist/node_modules/@ts-react-express-starter/common"
   }
 }
