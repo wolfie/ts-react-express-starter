@@ -6,10 +6,6 @@ module.exports = {
   entry: {
     app: "./src/index"
   },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "app.bundle.js"
-  },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
