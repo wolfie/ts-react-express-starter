@@ -20,12 +20,14 @@
     "build:common": "yarn workspace @ts-react-express-starter/common build",
     "start:build": "cross-env NODE_ENV=\"production\" node dist",
     "test": "jest --projects frontend common server",
+    "test-ci": "cross-env JEST_JUNIT_OUTPUT_DIR=\"test-results/jest\" jest --projects frontend common server --ci --reporters=default --reporters=jest-junit",
     "test:frontend": "jest --projects frontend",
     "test:common": "jest --projects common",
     "test:server": "jest --projects server"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "jest-junit": "^6.4.0"
   }
 }

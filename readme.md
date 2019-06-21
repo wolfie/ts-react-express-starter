@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/wolfie/ts-react-express-starter.svg?style=svg)](https://circleci.com/gh/wolfie/ts-react-express-starter)
+
 # TypeScript, React and Express Starter Project
 
 A template project where there's a start for React as a front-end and Express as a back-end, all with TypeScript.
