@@ -12,10 +12,10 @@
     "@types/cors": "^2.8.5",
     "@types/express": "^4.17.0",
     "@types/jest": "^24.0.13",
-    "jest": "^24.8.0",
+    "jest": "^24.9",
     "nodemon": "^1.19.1",
     "ts-node": "^8.2.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.7"
   },
   "dependencies": {
     "cors": "^2.8.5",
